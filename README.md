@@ -7,7 +7,7 @@
 # jquery参考资料
 * http://www.w3school.com.cn/jquery/jquery_ajax_get_post.asp
 
-#### DemoInfoController类说明
+# DemoInfoController类说明
 通过两个http接口: findAll，save 查询DB数据和存入数据
 1. http://127.0.0.1:8080/findAll 此时没有数据；
 2. http://127.0.0.1:8080/save 保存测试数据；
