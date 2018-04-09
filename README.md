@@ -1,6 +1,6 @@
 # starter
 #### 目录说明
-* dao: 数据库访问相关，采用了内存数据库：h2
+* dao: 数据库访问相关，采用了内存数据库：h2，数据库链接参数参见文件: application.properties
 * main：应用程序启动入口
 * web：http接口，html页面
 
