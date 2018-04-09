@@ -8,7 +8,7 @@
 * http://www.w3school.com.cn/jquery/jquery_ajax_get_post.asp
 
 # DemoInfoController类说明
-通过两个http接口: findAll，save 查询DB数据和存入数据
+通过两个http接口: findAll，save 查询DB数据和存入数据。该示例参考博客链接 http://412887952-qq-com.iteye.com/blog/2322756
 1. http://127.0.0.1:8080/findAll 此时没有数据；
 2. http://127.0.0.1:8080/save 保存测试数据；
 3. http://127.0.0.1:8080/findAll 会看到save进入的数据；
