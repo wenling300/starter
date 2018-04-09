@@ -4,6 +4,7 @@ import com.wll.starter.dao.DemoInfoRepository;
 import com.wll.starter.dao.model.DemoInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -11,6 +12,12 @@ public class DemoInfoController {
 
     @Autowired
     private DemoInfoRepository demoInfoRepository;
+
+    @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
+    public String add(DemoInfo demoInfo) {
+        demoInfoRepository.save(demoInfo);
+        return "add ok";
+    }
 
     /**
      * 保存数据.

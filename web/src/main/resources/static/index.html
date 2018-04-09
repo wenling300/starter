@@ -11,10 +11,30 @@
 
 
 
+<form>
+    标题：<input type="text" id="title"/><br/>
+    内容：<input type="text" id="content"/><br/>
+    <input type="button" value="提交" id="demoInfoAddBtn">
+</form>
+
 <script type="text/javascript" >
+    $("#demoInfoAddBtn").click(function(){
+        var title = $("#title").val();
+        var content = $("#content").val();
+
+        var data = {
+            title: title,
+            content: content
+        }
+        $.post("/add", data, function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+    <!--
     $.get("/hello",function(data,status){
         alert("Data: " + data + "\nStatus: " + status);
     });
+    -->
 </script>
 </body>
 </html>
