@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+<script type="text/javascript" >
+    $.get("/hello",function(data,status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+</script>
+</body>
+</html>
