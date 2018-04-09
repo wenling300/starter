@@ -14,3 +14,6 @@
 3. http://127.0.0.1:8080/findAll 会看到save进入的数据；
 4. 重新启动程序，再访问 http://127.0.0.1:8080/findAll 此时没有数据，说明了数据只保存在内存中，重启之后就释放了之前存入的数据。
 5. http://localhost:8080/index.html 实现了表单数据通过ajax提交，数据保存到db中，再访问 http://127.0.0.1:8080/findAll 可以看到刚存入的数据
+
+# 作业
+参考示例: https://blog.csdn.net/u013871100/article/details/68925050 新增一个表，实现增删查改
